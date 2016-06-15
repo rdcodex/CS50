@@ -13,7 +13,7 @@ int main(void)
 	do
 	{
 		printf("Enter how much change is owed: ");
-        change = GetFloat();
+        	change = GetFloat();
 		
 	}while(change < 0);
 
@@ -30,8 +30,8 @@ int main(void)
 	while(quaters < cents)
 	{
 		coins += cents / 25;
-        cents %= 25;
-        quaters += 25;
+        	cents %= 25;
+        	quaters += 25;
   	}
 
   	// instantiate dimes.
@@ -40,9 +40,9 @@ int main(void)
   	// Loop, modulo - Dimes.
   	while(dimes < cents)
   	{
-    	coins += cents / 10;
-    	cents %= 10;
-    	dimes += 10;
+    		coins += cents / 10;
+    		cents %= 10;
+    		dimes += 10;
   	}
 
   	// instantiate nickels.
@@ -51,9 +51,9 @@ int main(void)
   	// Loop, modulo - Nickels.
   	while(nickels < cents)
   	{
-    	coins += cents / 5;
-    	cents %= 5;
-    	nickels += 5;
+  		coins += cents / 5;
+    		cents %= 5;
+    		nickels += 5;
   	}
 
   	// instantiate pennies.
@@ -62,8 +62,8 @@ int main(void)
   	// Loop, modulo - Pennies.
   	while(pennies < cents)
   	{
-    	coins += cents / 1;
-    	pennies += 1;
+    		coins += cents / 1;
+    		pennies += 1;
   	}
 
   	// print result.
@@ -71,6 +71,5 @@ int main(void)
 
   	return 0;
 }
-
 
 
