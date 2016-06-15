@@ -1,10 +1,13 @@
+/*Mario program is used to build the half-pyramid.*/
+
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
 	int height;
-
+        
+        // Users input must be between 0 and 23.
 	printf("Enter a height value between (0 & 23)\n");
 
 	do
